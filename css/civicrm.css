@@ -1,0 +1,787 @@
+/*
+CiviCRM CSS
+*/
+
+#printer-friendly {
+    display: none;
+}
+
+.crm-public-footer {
+    display: none;
+}
+
+.crm-button-type-cancel {
+    display: none;
+}
+
+/* Content block alignment and width fixes */
+form .content {
+    width: 100%;
+}
+
+.crm-group,
+.crm-section,
+#billing-payment-block fieldset {
+    margin-bottom: 20px;
+    float: left;
+    width: 100%;
+}
+
+/* General form field styles */
+
+form legend {
+    padding: 0 5px;
+}
+
+.crm-form-checkbox, .form-checkbox {
+    clear: both;
+}
+
+label, .crm-form-checkbox, .form-checkbox, .crm-form-radio, .form-radio {
+    float: left;
+}
+
+/* Styles for credit card payment logos */
+.crm-container .credit_card_type-section .crm-credit_card_type-icons a {
+    display: block;
+    float: left;
+    width: 50px;
+    height: 30px;
+    background: url(/wp-content/plugins/civicrm/civicrm/i/creditcard-icons.png) no-repeat 0 0 transparent;
+    text-indent: -20000px;
+    margin-right: 10px;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+    border-radius: 3px;
+    border: 1px solid #FFFFFF;
+}
+
+.crm-container .credit_card_type-section .crm-credit_card_type-icons .crm-credit_card_type-icon-visa {
+    background-position: -50px 0;
+}
+
+.crm-container .credit_card_type-section .crm-credit_card_type-icons .crm-credit_card_type-icon-mastercard {
+    background-position: -100px 0;
+}
+
+.crm-container .credit_card_type-section .crm-credit_card_type-icons .crm-credit_card_type-icon-amex {
+    background-position: -150px 0;
+}
+
+.crm-container .credit_card_type-section .crm-credit_card_type-icons .crm-credit_card_type-icon-discover {
+    background-position: -200px 0;
+}
+
+.crm-container .credit_card_type-section .crm-credit_card_type-icons .crm-credit_card_type-icon-jcb {
+    background-position: -250px 0;
+}
+
+.crm-container .credit_card_type-section .crm-credit_card_type-icons .crm-credit_card_type-icon-unionpay {
+    background-position: -300px 0;
+}
+
+.crm-container .cvv2-icon {
+    display: inline-block;
+    width: 50px;
+    height: 30px;
+    background: url(/wp-content/plugins/civicrm/civicrm/i/creditcard-icons.png) no-repeat 0 0 transparent;
+}
+
+.payment_processor-section .content label {
+    padding-right: 15px;
+}
+
+/* Avoid weird border around the images (some themes will add a border around images) */
+#crm-container .credit_card_type-section .crm-credit_card_type-icons a,
+#crm-container .credit_card_type-section .crm-credit_card_type-icons a:link,
+#crm-container .credit_card_type-section .crm-credit_card_type-icons a:hover,
+#crm-container .credit_card_type-section .crm-credit_card_type-icons a:focus,
+#crm-container .credit_card_type-section .crm-credit_card_type-icons a:active {
+    color: #fff;
+}
+
+/* For User Dasboard front End Page */
+#crm-container .dashboard-elements,
+#crm-container #membership-listings,
+#crm-container #premiums-listings,
+#crm-container #searchForm table {
+    margin: 0em;
+    border-collapse: collapse;
+    border: 0px none;
+}
+
+.crm-container .header-dark {
+    margin: 0.5em 0em 0.5em;
+    padding: 0.5em;
+    background-color: #999999;
+    font-weight: bold;
+    color: #FAFAFA;
+    border-radius: 2px;
+    -moz-border-radius: 2px;
+    -webkit-border-radius: 2px;
+    -khtml-border-radius: 2px;
+}
+
+/* messages and status */
+.crm-container .messages {
+    margin: 1.0em 0em 1.0em;
+    border: none;
+    font-weight: normal;
+}
+
+.crm-container .messages .msg-title {
+    font-weight: bold;
+}
+
+.crm-container .messages table {
+    width: auto;
+}
+
+.crm-container .messages table td {
+    background-color: #F7F7F7;
+    border-bottom: 1px solid #DDDDDD;
+}
+
+.crm-container .status {
+    background-color: #FFFFCC;
+    background-image: none;
+    border: 1px solid #FFFF66;
+    margin: 0.5em 0px;
+    padding: 0.25em 0.5em;
+    color: #3e3e3e;
+    font-weight: normal;
+}
+
+.crm-container .status dl {
+    margin: 2px 5px;
+}
+
+.crm-container div.status dt {
+    clear: none;
+    float: left;
+    width: 20px;
+}
+
+.crm-container div.status dd {
+    margin-left: 0px;
+}
+
+.crm-container div.status ul {
+    margin: 0 0 1em 16px;
+}
+
+.crm-container .status-pending {
+    color: green;
+}
+
+.crm-container .status-completed {
+    color: #000080;
+}
+
+.crm-container .crm-marker,
+.crm-container-snippet .crm-marker {
+    color: #8A1F11;
+    font-weight: bold;
+    margin-right: 5px;
+}
+
+.crm-container .crm-error,
+.crm-container .crm-inline-error {
+    background: #FBE3E4 none repeat scroll 0 0;
+    border: none;
+    color: #8A1F11;
+}
+.crm-container .crm-error {
+    padding: 4px;
+}
+
+.crm-container div.view-data {
+    padding: .25em .5em .25em .5em;
+    border: 1px solid DimGray;
+    width: auto;
+    background-color: #ffffff;
+}
+
+.crm-container .crm-footer {
+    font-size: 0.8em;
+}
+
+#civicrm-footer {
+    margin-top: 2em;
+    border-top: 1px solid #ddd;
+    padding: 0.8em;
+    text-align: center;
+}
+
+#crm-record-log {
+    padding: 0.8em 0.8em 0em 0em;
+    text-align: right;
+}
+
+.crm-container #access {
+    padding: 0.8em 0.8em 0em 0em;
+    text-align: right;
+}
+
+.crm-container .header-dark {
+    margin: 0.5em 0em 0.5em;
+    padding: 0.5em;
+    background-color: #999999;
+    font-weight: bold;
+    color: #FAFAFA;
+    border-radius: 2px;
+    -moz-border-radius: 2px;
+    -webkit-border-radius: 2px;
+    -khtml-border-radius: 2px;
+}
+
+.crm-container div.display-block {
+    font-weight: normal;
+    margin: 1.0em 2.0em 1.0em 2.0em;
+}
+
+/* Styles for Actions Ribbon */
+#crm-container .crm-actions-ribbon {
+    margin: 0 0 8px 0;
+}
+
+#crm-container .crm-actions-ribbon ul {
+    margin: 0px;
+    padding: 0px;
+}
+
+#crm-container .crm-actions-ribbon li {
+    float: left;
+    margin: 0 8px 0 0;
+    padding: 0px;
+    list-style: none;
+}
+
+#crm-container .crm-actions-ribbon li.crm-delete-action {
+    margin-left: 30px;
+}
+
+#crm-container .crm-actions-ribbon li.crm-previous-action,
+#crm-container .crm-actions-ribbon li.crm-next-action {
+    float: right;
+    margin: 0px 0px 0px 8px;
+}
+
+#crm-container .ac_results li {
+    float: none;
+    padding: 4px;
+    margin: 0px;
+    line-height: 15px;
+}
+
+/* Styles for Action Items &  Action Link pop-up */
+.crm-container .action-item {
+    padding: 0px 5px;
+    border-left: 1px solid #CCC;
+    white-space: nowrap;
+}
+.crm-container .action-item-wrap {
+    padding: 0px 5px;
+    border-left: 1px solid #CCC;
+    white-space: normal;
+}
+.crm-container .action-item-first {
+    border-left: none;
+    /* last action item should not have right hand border */}
+
+.crm-container .panel {
+    display: none;
+    z-index: 9999;
+    position: absolute;
+    border-bottom: 0px;
+    background: transparent url(/wp-content/plugins/civicrm/civicrm/i/dropdown-pointer.gif) no-repeat scroll 150px 1px;
+    text-align: left;
+    padding-top: 5px;
+    margin: 0px;
+    width: 180px;
+}
+
+.crm-container td ul.panel {
+    top: 15px;
+    right: 0px;
+}
+
+.crm-container td ul.panel li {
+    margin: 0px;
+    padding: 2px;
+    list-style: none;
+    background-image: none;
+    width: auto;
+}
+
+.crm-container .btn-slide {
+    text-align: left;
+    text-decoration: none;
+    border: none;
+    cursor: pointer;
+    position: relative;
+    padding: 0px 14px 0 5px;
+    background: url(/wp-content/plugins/civicrm/civicrm/i/TreePlus.gif) no-repeat right 1px;
+    border-left: none;
+    z-index: 2;
+}
+
+.crm-container .btn-slide-active {
+    z-index: 10;
+}
+
+.crm-container .crm-configure-actions,
+.crm-container .crm-event-participants,
+.crm-container .crm-event-links,
+.crm-container .crm-event-more {
+    min-width: 85px;
+    z-index: 1;
+}
+
+.crm-container .panel li a {
+    text-decoration: none;
+    padding: 4px;
+    display: block;
+    border: none;
+    cursor: pointer;
+}
+
+/* event calendar and single event styles */
+
+#ecp1_event li.highlight {
+    background: #d7e1e7;
+    padding: 7px 10px;
+}
+
+#ecp1_event li span.ecp1_event-details-title {
+    border-bottom: 1px solid #c3c4c6;
+    margin: 30px 0 10px;
+    padding: 5px 10px;
+    width: 100%;
+}
+
+.event_fees-section .content {
+    width: 100%;
+}
+
+.crm-actionlinks-top .action-link {
+    margin-bottom: 20px;
+}
+
+.event_date_time-section,
+.event_address-section,
+.event_contact-section,
+.event_fees-section {
+    border-top: 1px dotted #c3c4c6;
+    padding-top: 20px;
+}
+
+.crm-section label {
+    font-weight: 600;
+}
+
+/* create new style */
+
+#crm-participant-wrapper,
+#crm-event-links-wrapper,
+#crm-contribpage-links-wrapper,
+#crm-create-new-wrapper,
+#crm-contact-actions-wrapper {
+    position: relative;
+    float: left;
+}
+
+#crm-event-links-list,
+#crm-contribpage-links-list,
+#crm-create-new-list,
+#crm-contact-actions-list,
+#crm-participant-list {
+    position: absolute;
+    display: none;
+    top: 24px;
+    width: 220px;
+    left: 0px;
+    z-index: 15;
+}
+
+#crm-create-new-list {
+    width: 124px;
+}
+#crm-contact-actions-list .icon {
+    background-image: url(/wp-content/plugins/civicrm/civicrm/i/icons/jquery-ui-FFFFFF.png);
+}
+
+#crm-contact-actions-list .crm-contact_activities-list select {
+    margin-top: 4px;
+}
+
+#crm-contact-actions-list .crm-contact_activities-list,
+#crm-contact-actions-list .crm-contact_print-list,
+#crm-contact-actions-list .crm-contact_actions-list {
+    width: 160px;
+}
+
+#crm-contact-actions-list .crm-contact_activities-list ul,
+#crm-contact-actions-list .crm-contact_print-list ul,
+#crm-contact-actions-list .crm-contact_actions-list ul,
+#crm-event-links-list .crm-event-info ul,
+#crm-event-links-list .crm-event-test ul,
+#crm-event-links-list .crm-event-live ul,
+#crm-contribpage-links-list .crm-contribpage-contribution ul,
+#crm-contribpage-links-list .crm-contribpage-test ul,
+#crm-contribpage-links-list .crm-contribpage-live ul,
+#crm-participant-list .crm-participant-counted ul,
+#crm-participant-list .crm-participant-not-counted ul,
+#crm-participant-list .crm-participant-listing ul,
+#crm-create-new-list ul {
+    width: auto;
+    margin: 0px;
+    padding: 0px;
+}
+
+#crm-contact-actions-list .crm-contact_activities-list ul {
+    padding-right: 4px;
+}
+#crm-contact-actions-list .crm-contact_print-list ul {
+    padding-left: 4px;
+}
+#crm-contact-actions-list .crm-contact_actions-list ul {
+    padding-left: 4px;
+}
+
+#crm-contact-actions-list .crm-contact_activities-list {
+    float: left;
+}
+#crm-contact-actions-list .crm-contact_print-list {
+    float: right;
+}
+#crm-contact-actions-list .crm-contact_actions-list {
+    margin-left: 160px;
+    margin-right: 161px;
+    border-left: 1px solid #a7a7a7;
+    border-right: 1px solid #a7a7a7;
+}
+
+/* theming for panel and context menus */
+#crm-container td ul.panel li {
+    background-color: #2F2F2E;
+}
+
+#crm-container .panel li a {
+    color: #DFDFDF;
+}
+
+#crm-container .panel li a:hover,
+#crm-container .crm-participant-list-inner li a:hover,
+#crm-container .crm-event-links-list-inner li a:hover,
+#crm-container .crm-contribpage-links-list-inner li a:hover {
+    color: #3e3e3e;
+    background-color: #F5F6F1;
+    text-decoration: none;
+}
+
+/* Special styling for specific form buttons */
+#crm-container span.crm-button_qf_Main_upload input,
+#crm-container span.crm-button_qf_Confirm_next input,
+#crm-container span.crm-button_qf_Register_upload input {
+    font-size: 1em;
+}
+
+/* setup for icons */
+.ac_results ul li {
+    background-image: url('');
+}
+
+.crm-container .ui-icon {
+    background-image: url(/wp-content/plugins/civicrm/civicrm/i/icons/jquery-ui-52534D.png)
+}
+.crm-container .icon {
+    height: 16px;
+    width: 16px;
+    background: transparent url(/wp-content/plugins/civicrm/civicrm/i/icons/jquery-ui-52534D.png) no-repeat top right;
+    float: left;
+    text-indent: -10000px;
+}
+
+.crm-container span.icon {
+    float: none;
+    display: inline-block;
+}
+
+.crm-container .button .icon,
+.crm-container .crm-button .icon {
+    background-image: url(/wp-content/plugins/civicrm/civicrm/i/icons/jquery-ui-FFFFFF.png);
+}
+.crm-container .button:hover .icon,
+.crm-container .crm-button:hover .icon {
+    background-image: url(/wp-content/plugins/civicrm/civicrm/i/icons/jquery-ui-2786C2.png);
+}
+
+.crm-container .crm-button .icon {
+    margin-top: 3px;
+}
+
+.crm-container .dark-icon {
+    background-image: url(/wp-content/plugins/civicrm/civicrm/packages/jquery/jquery-ui-1.9.0/css/smoothness/images/ui-icons_222222_256x240.png)}
+.crm-container .red-icon {
+    background-image: url(/wp-content/plugins/civicrm/civicrm/i/icons/jquery-ui-8A1F11.png)}
+
+.crm-container .edit-icon {
+    background-position: -66px -114px;
+}
+.crm-container .previous-icon {
+    background-position: -82px -161px;
+}
+.crm-container .next-icon {
+    background-position: -66px -161px;
+}
+.crm-container .add-icon {
+    background-position: -2px -193px;
+}
+.crm-container .back-icon {
+    background-position: -2px -65px;
+}
+.crm-container .delete-icon {
+    background-position: -179px -99px;
+}
+.crm-container .details-icon {
+    background-position: -129px -112px;
+}
+.crm-container .button:hover .delete-icon {
+    background-image: url(/wp-content/plugins/civicrm/civicrm/packages/jquery/jquery-ui-1.9.0/css/smoothness/images/ui-icons_cd0a0a_256x240.png)!important;
+}
+
+.crm-container .restore-icon {
+    background-position: 0px -66px;background-image: url(/wp-content/plugins/civicrm/civicrm/i/icons/jquery-ui-91CE00.png);
+}
+.crm-container .button:hover .restore-icon {
+    background-image: url(/wp-content/plugins/civicrm/civicrm/i/icons/jquery-ui-91CE00.png);
+}
+
+.crm-container .vcard-icon {
+    background-position: -35px -81px;
+}
+
+.crm-container .print-icon {
+    background-position: -162px -97px;
+}
+
+.crm-container .dashboard-icon {
+    background-position: -194px -129px;
+}
+
+.crm-container .user-record-icon {
+    background-position: -145px -98px;
+}
+
+.crm-container .inform-icon {
+    background-position: -16px -144px;
+    margin-right: 5px;
+}
+
+.crm-container .dropdown-icon {
+    background-position: -46px -32px;
+    float: right;
+}
+
+.crm-container .tip-icon {
+    background-position: -128px -128px;
+}
+
+.crm-container .alert-icon {
+    background-position: 0 -144px;
+}
+.crm-container .check-icon {
+    background-position: -66px -146px;
+}
+.crm-container .refresh-icon {
+    background-position: -65px -81px;
+}
+.crm-container .settings-icon {
+    background-position: -178px -114px;
+}
+.crm-container .search-icon {
+    background-position: -161px -114px;
+}
+.crm-container .email-icon {
+    background-position: -81px -98px;
+}
+.crm-container .preview-icon {
+    background-position: -227px -129px;
+}
+.crm-container .play-icon {
+    background-position: -3px -161px;
+}
+
+.crm-container .swap-icon {
+    background-position: -82px -81px;
+}
+
+#crm-container .geotag {
+    padding: 2px 0 2px 20px !important;
+    background: url(/wp-content/plugins/civicrm/civicrm/i/geotag_16.png) left center no-repeat;
+    font-size: .9em;
+}
+
+/* These .crm-icon classes use item_sprites.png */
+
+.crm-container .crm-icon {
+    background-image: url(/wp-content/plugins/civicrm/civicrm/i/item_sprites.png);
+    margin: 2px 4px 0 0;
+    text-indent: -10000px;
+    /* for accessibility reason, put the name of the type/subtype in the icon div (it will be hidden and replaced by the icon) */
+}
+
+.crm-container .Individual-icon {
+    background-position: 0px 0px;
+}
+.crm-container .Group-icon {
+    background-position: -16px 0px;
+}
+.crm-container .Household-icon {
+    background-position: -32px 0px;
+}
+
+.crm-container .Individual-subtype-icon {
+    background-position: 0px -48px;
+}
+.crm-container .Household-subtype-icon {
+    background-position: -32px -48px;
+}
+.crm-container .Organization-subtype-icon {
+    background-position: -48px -48px;
+}
+
+.crm-container .Organization-icon {
+    background-position: -48px 0px;
+}
+.crm-container .Activity-icon {
+    background-position: -64px 0px;
+}
+.crm-container .Case-icon {
+    background-position: -80px 0px;
+}
+.crm-container .Grant-icon {
+    background-position: 0px -16px;
+}
+.crm-container .Contribution-icon {
+    background-position: -16px -16px;
+}
+.crm-container .Pledge-icon {
+    background-position: -16px -16px;
+}
+.crm-container .Membership-icon {
+    background-position: -32px -16px;
+}
+.crm-container .Participant-icon {
+    background-position: 0px -32px;
+}
+.crm-container .Note-icon {
+    background-position: -16px -32px;
+}
+.crm-container .Relationship-icon {
+    background-position: -32px -32px;
+}
+
+/* autocomplete */
+
+.ac_results {
+    background: transparent url(/wp-content/plugins/civicrm/civicrm/i/dropdown-pointer.gif) no-repeat 25px 1px;
+    padding-top: 5px;
+    border: none;
+    text-align: left;
+}
+
+.ac_results-inner,
+.crm-participant-list-inner,
+.crm-event-links-list-inner,
+.crm-contribpage-links-list-inner,
+.crm-create-new-list-inner,
+.crm-contact-actions-list-inner {
+    background-color: #2f2f2e;
+    padding: 4px;
+}
+
+.crm-create-new-list-inner {
+    width: 124px!important;
+}
+
+.ac_even {
+    background-color: transparent;
+}
+.ac_odd {
+    background-color: #4F4F4F;
+}
+
+.ac_results li a {
+    display: block;
+}
+
+.ac_results li,
+.ac_results li a,
+.ac_results li a:visited,
+.crm-container .ac_results li,
+.crm-container .ac_results li a,
+.crm-container .ac_results li a:visited {
+    color: #DFDFDF;
+    text-decoration: none;
+}
+
+.ac_results li strong {
+    color: #FFF;
+    font-weight: normal;
+}
+
+.ac_results li .icon,
+.ac_results li a .icon,
+.ac_results li a:visited .icon,
+.crm-container .ac_results li .icon,
+.crm-container .ac_results li a .icon,
+.crm-container .ac_results li a:visited .icon {
+    background-image: url(/wp-content/plugins/civicrm/civicrm/i/icons/jquery-ui-FFFFFF.png);
+}
+
+.ac_results li a:hover .icon,
+.ac_results li.ac_over a .icon,
+.crm-container .ac_results li a:hover .icon {
+    background-image: url(/wp-content/plugins/civicrm/civicrm/i/icons/jquery-ui-3E3E3E.png);
+}
+
+.ac_results li.ac_over,
+.ac_results li:hover,
+.ac_results li:hover a,
+.ac_results li.ac_over a,
+.ac_results li a:hover,
+.ac_results li.ac_over a:visited {
+    background-color: #F5F6F1;
+    color: #666;
+}
+.ac_results li.ac_over strong,
+.ac_results li:hover strong,
+.crm-container .ac_results li.ac_over strong {
+    color: #000;
+}
+
+/* loader autocomplete */
+
+#civicrm-menu .ac_loading,
+.crm-container .ac_loading {
+    background: white url(/wp-content/plugins/civicrm/civicrm/i/loading.gif) no-repeat right center;
+}
+
+/* theming for panel and context menus */
+#crm-container td ul.panel li {
+    background-color: #2F2F2E;
+}
+
+#crm-container .panel li a {
+    color: #DFDFDF;
+}
+
+#crm-container .panel li a:hover,
+#crm-container .crm-participant-list-inner li a:hover,
+#crm-container .crm-event-links-list-inner li a:hover,
+#crm-container .crm-contribpage-links-list-inner li a:hover {
+    color: #3e3e3e;
+    background-color: #F5F6F1;
+    text-decoration: none;
+}
