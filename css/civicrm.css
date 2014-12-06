@@ -10,7 +10,7 @@ CiviCRM CSS
     display: none;
 }
 
-.crm-button-type-cancel {
+.crm-button-type-cancel, .button.cancel {
     display: none;
 }
 
