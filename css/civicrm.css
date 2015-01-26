@@ -41,6 +41,57 @@ label, .crm-form-checkbox, .form-checkbox, .crm-form-radio, .form-radio {
     float: left;
 }
 
+#crm-container, .crm-container {
+    line-height: 135%;
+}
+
+#crm-container.crm-public .label {
+    padding-top: 6px;
+}
+
+.crm-container .crm-section .label {
+    float: left;
+    text-align: right;
+    width: 17%;
+}
+
+.crm-container table {
+    border: 1px solid #efefef;
+}
+
+.crm-container table {
+    border-collapse: collapse;
+    font-size: 13px;
+    margin: 0 0 1em;
+    width: 100%;
+}
+
+.crm-public .crm-profile-view .content {
+    padding-top: 6px;
+}
+
+.crm-container .crm-section .content {
+    margin-left: 19%;
+}
+
+.directory .content {
+    padding-bottom: 48px;
+}
+
+#crm-container tr.columnheader {
+    background-color: #e6e6e6;
+    border: 1px solid #ddd;
+    color: #000000;
+}
+
+.crm-container .odd-row, .crm-container .odd, tbody.scrollContent {
+    background-color: #fafafa;
+}
+
+.crm-container .even-row, .crm-container .even, tbody.scrollContent tr.alternateRow {
+    background-color: #efefef;
+}
+
 /* Styles for credit card payment logos */
 .crm-container .credit_card_type-section .crm-credit_card_type-icons a {
     display: block;
