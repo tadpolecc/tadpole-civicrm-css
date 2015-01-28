@@ -2256,6 +2256,7 @@ div.grippie {
 /* Set/alter ICONS */
 
 #crm-container div#printer-friendly {
+  display: none;
   float: right;
   position: relative;
   margin: -2em 0.5em 0 0;
@@ -2315,6 +2316,7 @@ div.grippie {
 .crm-container .crm-button-type-cancel,
 .crm-container .crm-button-type-back {
   margin-left: 20px;
+  display: none;
 }
 .crm-container .crm-button-type-cancel input {
   color: #E6E6DC!important;
@@ -4537,4 +4539,12 @@ span.crm-status-icon {
 }
 .crm-container table.mergecontact thead th {
   width:30%;
+}
+/* Specific site changes */
+.crm-form-checkbox, .form-checkbox {
+    clear: both;
+}
+
+label, .crm-form-checkbox, .form-checkbox, .crm-form-radio, .form-radio {
+    float: left;
 }
