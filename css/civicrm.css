@@ -2363,8 +2363,8 @@ div.grippie {
   float: right;
   position: relative;
   margin: -2em 0.5em 0 0;
-  display: none;
 }
+
 /* For Joomla, margin 0 works correctly */
 #crm-container table#crm-content div#printer-friendly {
   margin: 0;
@@ -2430,7 +2430,6 @@ div.grippie {
 .crm-container .crm-button-type-cancel input,
 #crm-container .crm-button-type-cancel input {
   color: #E6E6DC;
-  display: none;
 }
 
 .crm-container a.button,
@@ -4589,6 +4588,17 @@ span.crm-status-icon {
 /* block-ui */
 .crm-container .blockUI.blockOverlay {
   background: url("../i/loading-overlay.gif") center center no-repeat white !important;
+}
+
+/* ==================================== */
+
+/* generic styles (for all sites) */
+.button.cancel {
+    display: none;
+}
+
+.ui-icon.ui-icon-print {
+    display: none;
 }
 
 /* Specific site changes */
