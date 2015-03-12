@@ -34,3 +34,11 @@ civicrm_wp_initialize();
 
 civicrm_api3('Setting', 'create', array('disable_core_css' => 1,));
 }
+
+register_deactivation_hook( __FILE__, 'tc_civi_deactivate');
+function tc_civi_deactivate() {
+
+civicrm_wp_initialize();
+
+civicrm_api3('Setting', 'create', array('disable_core_css' => 0,));
+}
