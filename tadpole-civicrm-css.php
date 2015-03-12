@@ -26,3 +26,11 @@ add_action( 'wp_print_styles', 'tc_register_tad_civicrm_styles', 110 );
 function tc_register_tad_civicrm_styles() {
 	wp_enqueue_style ('tad_civicrm', TC_CIVICRM_CSS_URL . 'css/civicrm.css' );
 }
+
+register_activation_hook( __FILE__, 'tc_civi_api');
+function tc_civi_api() {
+
+civicrm_wp_initialize();
+
+civicrm_api3('Setting', 'create', array('disable_core_css' => 1,));
+}
