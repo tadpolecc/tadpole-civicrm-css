@@ -92,7 +92,8 @@ div.crm-container fieldset label{
 }
 
 .crm-container .crm-section .content {
-    margin-left: 19%;
+    margin: 0 0 0 19%;
+    width: auto;
 }
 
 .directory .content {
@@ -504,10 +505,6 @@ input.crm-form-entityref {
 
 .crm-container .label-left .label {
   text-align: left;
-}
-
-.crm-container .crm-section .content {
-  margin-left: 19%;
 }
 
 .crm-container .no-label .content {
@@ -4324,10 +4321,6 @@ span.crm-status-icon {
   border-radius: 3px;
   vertical-align: middle;
   max-width: 100%;
-}
-
-#crm-container.crm-public .label {
-  padding-top: 6px;
 }
 
 .crm-container.crm-public .select2-container,
