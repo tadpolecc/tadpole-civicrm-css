@@ -15,15 +15,6 @@ CiviCRM CSS
   box-sizing: content-box;
 }
 
-div.crm-container label {
-  font-weight: normal;
-  display: inline;
-}
-
-div.crm-container fieldset label{
-  float: none;
-}
-
 .crm-container .crm-quickSearchField {
   font-weight: normal;
 }
@@ -49,6 +40,40 @@ div.crm-container fieldset label{
   padding: 0px;
 }
 
+/* ==================================== */
+
+/* generic styles (for all sites) */
+
+.button.cancel {
+  display: none;
+}
+
+#printer-friendly {
+  display: none;
+}
+
+.crm-form-checkbox, .form-checkbox {
+  clear: both;
+}
+
+label, 
+.crm-form-checkbox,
+.form-checkbox,
+.crm-form-radio,
+.form-radio {
+  float: left;
+}
+
+input.form-checkbox,
+input.form-radio {
+  cursor: pointer;
+}
+
+div#crm-container.crm-container.crm-public div.crm-section div.content label {
+  margin: -3px 20px 0 5px;
+}
+
+
 /* TABLE STYLING */
 
 .crm-container table {
@@ -62,18 +87,8 @@ div.crm-container fieldset label{
   background: none transparent;
 }
 
-#crm-container, .crm-container {
-    line-height: 135%;
-}
-
 #crm-container.crm-public .label {
     padding-top: 6px;
-}
-
-.crm-container .crm-section .label {
-    float: left;
-    text-align: right;
-    width: 17%;
 }
 
 .crm-container table {
@@ -92,8 +107,9 @@ div.crm-container fieldset label{
 }
 
 .crm-container .crm-section .content {
-    margin: 0 0 0 19%;
-    width: auto;
+  float: left;
+  margin: 0 0 0 5%;
+  width: auto;
 }
 
 .directory .content {
@@ -128,6 +144,10 @@ div.crm-container fieldset label{
     border: 1px solid #FFFFFF;
 }
 
+input#billingcheckbox {
+  margin: 4px 0 0 5px;
+}
+
 .crm-container table.criteria-group {
   margin-bottom: .1em;
 }
@@ -152,6 +172,7 @@ div.crm-container fieldset label{
   text-align: left;
   vertical-align: top;
 }
+
 /* Styles for Sticky Header */
 .crm-container table thead.sticky {
   background-color: #FFF;
@@ -266,13 +287,6 @@ input.crm-form-entityref {
 .crm-container .bigSelect {
   width: 15em;
   height: 12em;
-}
-
-
-/* Override line-height from style.css */
-#crm-container,
-.crm-container {
-  line-height: 135%;
 }
 
 /* Base crm-container styles */
@@ -436,14 +450,6 @@ input.crm-form-entityref {
   float: right;
 }
 
-.crm-container fieldset {
-  background: none;
-  padding: 4px 0px;
-  margin: 10px 0px;
-  border: none;
-  border-top: 1px solid #CFCEC3;
-}
-
 .crm-container fieldset.no-border {
   border-top: none;
 }
@@ -493,14 +499,21 @@ input.crm-form-entityref {
 }
 
 .crm-container .crm-section,
-.crm-container div.crm-field-wrapper {
+.crm-container div.crm-field-wrapper,
+.crm-block #priceset-div,
+.crm-block .crm-group,
+.crm-block fieldset {
   margin-bottom: 1em;
 }
 
+.crm-container .crm-section {
+  clear: both;
+}
+
 .crm-container .crm-section .label {
+  display: inline;
   float: left;
-  width: 17%;
-  text-align: right;
+  width: 25%;
 }
 
 .crm-container .label-left .label {
@@ -2377,7 +2390,6 @@ div.grippie {
 
 .crm-container .crm-submit-buttons,
 .crm-container .action-link {
-  height: 27px;
   margin: 4px 0px 4px 2px;
 }
 
@@ -2390,63 +2402,11 @@ div.grippie {
   margin-left: .5em;
 }
 
-.crm-container .crm-button,
-#crm-container .crm-button {
-  border: medium none;
-  cursor: pointer;
-  display: block;
-  float: left !important;
-  overflow: hidden;
-  text-shadow: 0 1px 0 black;
-  margin: 0px 12px 0 0;
-  padding: 0px 4px;
-  cursor: pointer;
-}
-
-.crm-container .crm-button input,
-#crm-container .crm-button input {
-  background: none;
-  _background: #6C6C6C;
-  /* IE6 only */
-  border: medium none;
-  color: #FFF;
-  cursor: pointer;
-  font-size: 13px;
-  font-weight: normal;
-  margin: 0 0 0 0px;
-  padding: 1px 8px 2px 4px;
-}
-
 .crm-container .crm-button-type-cancel,
 .crm-container .crm-button-type-back,
 #crm-container .crm-button-type-cancel,
 #crm-container .crm-button-type-back {
   margin-left: 20px;
-}
-.crm-container .crm-button-type-cancel input,
-#crm-container .crm-button-type-cancel input {
-  color: #E6E6DC;
-}
-
-.crm-container a.button,
-.crm-container a.button:link,
-.crm-container a.button:visited,
-.crm-container input.crm-form-submit,
-.crm-container .crm-button,
-.crm-container .ui-dialog-buttonset .ui-button,
-#crm-container input[type=button],
-#crm-container input.crm-form-submit-inline,
-#crm-container .crm-button {
-  text-shadow: 0 1px 0 black;
-  background: #70716B url(../i/crm-button-bg.gif) repeat-x top left;
-  color: #FFF;
-  font-size: 13px;
-  font-weight: normal;
-  margin: 0 6px 0 0;
-  padding: 2px 6px;
-  text-decoration: none;
-  cursor: pointer;
-  border: 1px solid #3e3e3e;
 }
 
 .crm-container .crm-submit-buttons a.button.cancel {
@@ -2459,11 +2419,6 @@ div.grippie {
 #crm-container input.crm-form-submit-inline[disabled],
 #crm-container .crm-button[disabled] {
     color: #999;
-}
-
-.crm-container .crm-button,
-#crm-container .crm-button {
-  padding: 1px;
 }
 
 .crm-container input.crm-form-submit,
@@ -3162,11 +3117,6 @@ div a.helpicon:focus {
   border: 0px none;
 }
 
-/* Override Drupal .2em margin-bottom on forms (we don't want to give up that space) */
-div.crm-container form {
-  margin-bottom: 0em;
-}
-
 /* This is the style for the trigger icon. The margin-bottom value causes the icon to shift down to center it. */
 .crm-container .ui-datepicker-trigger {
   margin-top: 4px;
@@ -3611,20 +3561,6 @@ tbody.scrollContent tr.alternateRow {
   color: #E43D2B !important;
 }
 
-/* rounded corners - we will call dd_roundies on all this */
-.crm-container .crm-button,
-.crm-container a.button,
-.crm-container a.button:link,
-.crm-container input.crm-form-submit,
-.crm-container input[type=button],
-.crm-container input.crm-form-submit-inline {
-  -moz-border-radius: 3px;
-  -webkit-border-radius: 3px;
-  -khtml-border-radius: 3px;
-  border-radius: 3px;
-}
-
-
 .crm-container div.status,
 div.m ul#civicrm-menu,
 .crm-container #help,
@@ -3834,18 +3770,6 @@ div.m ul#civicrm-menu,
 /* Restore this property otherwise our css overrides it */
 .select2-search input {
   box-sizing: border-box;
-}
-
-/* Special styling for specific form buttons */
-#crm-container span.crm-button_qf_Main_upload input,
-#crm-container span.crm-button_qf_Confirm_next input,
-#crm-container span.crm-button_qf_Register_upload input {
-  font-size: 1.2em;
-}
-
-/* Match font size on 'Continue' button on event participant form (no specific class) */
-#crm-container .crm-event-additionalparticipant-form-block span.crm-button input.crm-form-submit.default {
-  font-size: 1.2em;
 }
 
 /* jQuery UI styles */
@@ -4357,20 +4281,6 @@ span.crm-status-icon {
   font-size: 15px;
 }
 
-#crm-container.crm-public .crm-section,
-.crm-section {
-  margin-bottom: 0;
-}
-
-#crm-container.crm-public #crm-submit-buttons {
-  margin-top: 30px;
-}
-
-#crm-container.crm-public #crm-submit-buttons input#_qf_Main_upload-bottom {
-  font-size: 1.5em;
-  padding: 3px 10px;
-}
-
 #crm-container.crm-public #premiums-listings {
   margin-top: 10px;
   min-width: 450px;
@@ -4467,17 +4377,6 @@ span.crm-status-icon {
   text-align: center;
   font-weight: bold;
   margin-bottom: .5em;
-}
-
-#crm-container.crm-public .price-set-row {
-  font-size: 15px;
-  margin-bottom: 5px;
-}
-
-#crm-container.crm-public .price-set-row input,
-#crm-container.crm-public .price-set-row label {
-  vertical-align: middle;
-  cursor: pointer;
 }
 
 #crm-container.crm-public .price-set-row .crm-price-amount-amount {
@@ -4585,25 +4484,3 @@ span.crm-status-icon {
 .crm-container .blockUI.blockOverlay {
   background: url(../i/loading-overlay.gif) center center no-repeat white !important;
 }
-
-/* ==================================== */
-
-/* generic styles (for all sites) */
-
-.button.cancel {
-  display: none;
-}
-
-#printer-friendly {
-  display: none;
-}
-
-.crm-form-checkbox, .form-checkbox {
-  clear: both;
-}
-
-label, .crm-form-checkbox, .form-checkbox, .crm-form-radio, .form-radio {
-  float: left;
-}
-
-/* Specific site changes */
