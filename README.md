@@ -15,7 +15,7 @@ Example Code:
 
 ```php
 function tc_civicrm_theme_css( ) {
-    $tc_css = get_bloginfo( 'stylesheet_directory' ) .'/includes/civicrm.css';
+    $tc_css = get_bloginfo( 'stylesheet_directory' ) .'/includes/css/civicrm.css';
 
     return $tc_css;
     }
