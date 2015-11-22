@@ -3561,27 +3561,6 @@ tbody.scrollContent tr.alternateRow {
   color: #E43D2B !important;
 }
 
-.crm-container div.status,
-div.m ul#civicrm-menu,
-.crm-container #help,
-.crm-container .help,
-.crm-container .ui-tabs-panel,
-.crm-container .crm-content-block,
-#full-screen-header,
-.crm-container .crm-pager,
-.crm-container form .section-hidden-border,
-.crm-container #search-status,
-.crm-container .crm-form-block,
-.crm-container .crm-search-tasks,
-.crm-container .crm-tasks,
-.crm-container div.form-item,
-.crm-container div.messages {
-  -moz-border-radius: 4px;
-  -webkit-border-radius: 4px;
-  -khtml-border-radius: 4px;
-  border-radius: 4px;
-}
-
 /* deprecated autocomplete styles */
 
 .ac_results {
