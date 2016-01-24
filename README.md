@@ -1,6 +1,6 @@
 # tadpole-civicrm-css
 
-## Development has moved to https://develop.tadpole.cc/plugins/tadpole-civicrm-css
+## Development has moved to https://develop.tadpole.cc/civicrm-plugins/tadpole-civicrm-css
 
 Tadpole's CiviCRM css override that allows the theme to control the CSS on frontend CiviCRM pages.
 
